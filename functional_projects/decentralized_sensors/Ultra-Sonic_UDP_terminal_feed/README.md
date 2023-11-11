@@ -1,10 +1,20 @@
 
 ##
-# Ultra-Sonic UDP terminal feed
+# Wi-Fi Enabled Ultrasonic Ranging Device
 
 # Introduction
 
-Welcome to the "Ultra-Sonic UDP Terminal Feed" project, where we embark on a journey to seamlessly transfer ultrasonic sensor data wirelessly to any Linux terminal via a Wi-Fi network. This cutting-edge solution leverages the power of UDP (User Datagram Protocol) to ensure swift and efficient data streaming. Say farewell to the constraints of wired connections and embrace a new era of flexibility and convenience in acquiring, analyzing, and utilizing ultrasonic data.
+The "Ultrasonic Wi-Fi Distance Transmitter" project aims to develop a wireless distance measurement system using an ultrasonic sensor HC-SR04, an ESP-32 chip, and the UDP protocol over Wi-Fi. This project enables real-time transmission of distance data from the sensor to a remote receiver, which can be a client socket code written in C programming. The receiver can be executed on a Linux terminal or an Android phone terminal using the Termux app, as long as they are connected to the same local Wi-Fi network.
+
+By leveraging the capabilities of the ESP-32 chip and its built-in Wi-Fi module, the system establishes a wireless connection and utilizes the UDP protocol for data transmission. The ultrasonic sensor HC-SR04 measures distances by emitting ultrasonic waves and calculating the time it takes for the waves to bounce back. The measured distance is then transmitted wirelessly to the receiver within the local Wi-Fi network, allowing for remote monitoring and analysis.
+
+It's important to note that the data transmission is limited to the local Wi-Fi network and is not connected to the internet. This ensures data privacy and security, as the distance data remains within the confines of the local network.
+
+The receiver, implemented as a client socket code in C programming, can be executed on a Linux terminal or an Android phone terminal using the Termux app. This flexibility allows for easy integration with existing systems and provides a convenient interface for receiving and processing the distance data. The client socket code establishes a connection with the ESP-32 chip acting as the server, enabling seamless communication and data retrieval.
+
+The primary objective of this project is to provide a reliable and efficient means of distance measurement that eliminates the need for physical connections. This wireless solution offers flexibility in terms of sensor placement and enables real-time monitoring of distances in various applications such as robotics, automation, security systems, and more. In this project I will leave it to your imagination on how you can use this.
+Throughout this design document, we will outline the system architecture, hardware components, software implementation, and testing procedures required to successfully develop the "Ultrasonic Wi-Fi Distance Transmitter" project, including the setup and execution of the client socket code on a Linux terminal or an Android phone terminal using the Termux app within the local Wi-Fi network.
+
 
 # Let's Get to Work!
 
@@ -55,7 +65,7 @@ Here's how the system works:
 
 # What Do We Achieve?
 
-This project provides a simple yet effective hardware-software fusion, making it accessible and engaging for beginners interested in the embedded field.
+ "Wi-Fi Enabled Ultrasonic ranging device" project offers an accessible and engaging platform for beginners to delve into the world of embedded programming. It provides a hands-on learning experience, fosters understanding of wireless communication and sensor integration, develops problem-solving skills, and encourages creativity and innovation.
 
 # ![Shape1](RackMultipart20231104-1-q0pu2j_html_dd0215582b2d4580.gif)Skills Needed:
 
