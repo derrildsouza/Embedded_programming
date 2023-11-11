@@ -2,6 +2,8 @@
 ##
 # Wi-Fi Enabled Ultrasonic Ranging Device
 
+![skill_needed_us](https://github.com/derrildsouza/basics/assets/64513486/cbf525e6-58b1-44cb-b1b1-62d3643c95d2)
+
 # Introduction
 
 The "Wi-Fi enabled Ultrasonic ranging device" project aims to develop a wireless distance measurement system using an ultrasonic sensor HC-SR04, an ESP-32 chip, and the UDP protocol over Wi-Fi. This project enables real-time transmission of distance data from the sensor to a remote receiver, which can be a client socket code written in C programming. The receiver can be executed on a Linux terminal or an Android phone terminal using the Termux app, as long as they are connected to the same local Wi-Fi network.
@@ -73,8 +75,6 @@ Here's how the system works:
 - Basic hardware understanding.
 - A grasp of network protocols, specifically UDP in this case.
 - Time management to complete the project efficiently.
-
-![skill_needed_us](https://github.com/derrildsouza/basics/assets/64513486/cbf525e6-58b1-44cb-b1b1-62d3643c95d2)
 
 
 # Circuit diagram:
