@@ -4,7 +4,7 @@
 
 # Introduction
 
-The "Ultrasonic Wi-Fi Distance Transmitter" project aims to develop a wireless distance measurement system using an ultrasonic sensor HC-SR04, an ESP-32 chip, and the UDP protocol over Wi-Fi. This project enables real-time transmission of distance data from the sensor to a remote receiver, which can be a client socket code written in C programming. The receiver can be executed on a Linux terminal or an Android phone terminal using the Termux app, as long as they are connected to the same local Wi-Fi network.
+The "Wi-Fi enabled Ultrasonic ranging device" project aims to develop a wireless distance measurement system using an ultrasonic sensor HC-SR04, an ESP-32 chip, and the UDP protocol over Wi-Fi. This project enables real-time transmission of distance data from the sensor to a remote receiver, which can be a client socket code written in C programming. The receiver can be executed on a Linux terminal or an Android phone terminal using the Termux app, as long as they are connected to the same local Wi-Fi network.
 
 By leveraging the capabilities of the ESP-32 chip and its built-in Wi-Fi module, the system establishes a wireless connection and utilizes the UDP protocol for data transmission. The ultrasonic sensor HC-SR04 measures distances by emitting ultrasonic waves and calculating the time it takes for the waves to bounce back. The measured distance is then transmitted wirelessly to the receiver within the local Wi-Fi network, allowing for remote monitoring and analysis.
 
