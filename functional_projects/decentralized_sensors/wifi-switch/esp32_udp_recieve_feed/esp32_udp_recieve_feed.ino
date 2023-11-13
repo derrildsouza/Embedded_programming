@@ -1,34 +1,50 @@
 
+/*
+  File: relay_control.cpp
+  Author: [Your Name]
+  Date: [Date]
+
+  Description: This file contains the code for an ESP32-based device that controls relays based on UDP commands. It connects to a WiFi network, listens for UDP packets, and toggles relays based on the received commands.
+
+  License: 
+  This code is released under the Apache License 2.0. You are free to modify and distribute this code for any purpose, with or without changes. Please see the LICENSE file for the full text of the Apache License 2.0.
+
+  Disclaimer: 
+  This code is provided as-is, without any warranty or support. Use it at your own risk.
+
+  Contact: 
+  For any questions or inquiries, please contact [Your Contact Information].
+*/
+
 #include <WiFi.h>
 #include <AsyncUDP.h>
-
 
 #define RELAY1  15
 #define RELAY2  4
 
-const char* ssid = "";
-const char* password = "";
-const int udpPort = 12345; // Port number for UDP communication
+const char* ssid = "your_ssid";  // Replace with your WiFi network name
+const char* password = "your_password";  // Replace with your WiFi password
+const int udpPort = 12345;  // Port number for UDP communication
 
 AsyncUDP udp;
 char received_data[128];
 
 void setup() {
   pinMode(RELAY1, OUTPUT);
-    digitalWrite(RELAY1, HIGH);
-    pinMode(RELAY2, OUTPUT);
-    digitalWrite(RELAY2, HIGH);
-    delay(100);
+  digitalWrite(RELAY1, HIGH);
+  pinMode(RELAY2, OUTPUT);
+  digitalWrite(RELAY2, HIGH);
+  delay(100);
   Serial.begin(115200);
   // Set your Static IP address
-IPAddress local_IP(192, 168, 1, 201);
-// Set your Gateway IP address
-IPAddress gateway(192, 168, 1, 1);
+  IPAddress local_IP(192, 168, 1, 201);
+  // Set your Gateway IP address
+  IPAddress gateway(192, 168, 1, 1);
 
-IPAddress subnet(255, 255, 0, 0);
-IPAddress primaryDNS(8, 8, 8, 8);   //optional
-IPAddress secondaryDNS(8, 8, 4, 4); //optional
-if (!WiFi.config(local_IP, gateway, subnet, primaryDNS, secondaryDNS)) {
+  IPAddress subnet(255, 255, 0, 0);
+  IPAddress primaryDNS(8, 8, 8, 8);   //optional
+  IPAddress secondaryDNS(8, 8, 4, 4); //optional
+  if (!WiFi.config(local_IP, gateway, subnet, primaryDNS, secondaryDNS)) {
     Serial.println("STA Failed to configure");
   }
 
@@ -40,7 +56,6 @@ if (!WiFi.config(local_IP, gateway, subnet, primaryDNS, secondaryDNS)) {
   }
   Serial.println("Connected to WiFi");
   Serial.printf("I am listening at IP %s, UDP port %d\n", WiFi.localIP().toString().c_str(), udpPort);
-
 
   // Start the UDP server
   if (udp.listen(udpPort)) {
@@ -68,7 +83,7 @@ if (!WiFi.config(local_IP, gateway, subnet, primaryDNS, secondaryDNS)) {
         Serial.println("Relay 1 OFF");
         digitalWrite(RELAY1, HIGH);
       } else if (strcmp(received_data, "R2ON") == 0){
-        Serial.println("Relay 2 ON");      
+        Serial.println("Relay 2 ON");
         digitalWrite(RELAY2, LOW);
       } else if (strcmp(received_data, "R2OFF") == 0) {
         Serial.println("Relay 2 OFF");
@@ -91,3 +106,4 @@ if (!WiFi.config(local_IP, gateway, subnet, primaryDNS, secondaryDNS)) {
 void loop() {
   // Nothing to do here because we're using async callbacks
 }
+ 
