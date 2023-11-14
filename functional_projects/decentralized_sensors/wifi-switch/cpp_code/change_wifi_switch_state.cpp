@@ -1,24 +1,5 @@
-/*
- * ESP32 Electric Socket Control
- * ------------------------------
- * This C program communicates with an ESP32 server using UDP to control an electric
- * socket. It sends commands ("R1ON" to turn on and "R1OFF" to turn off) to control
- * the state of the electric socket. The program sets up a UDP socket, configures
- * the server address, and sends the appropriate command to the server to control
- * the socket.
- *
- * The server address (IP and port) is specified, and the program sends "R1ON" to
- * turn on the electric socket or "R1OFF" to turn it off. This program is an example
- * of a UDP client for remote control of an electric socket via an ESP32 device or
- * any other network server.
- *
- * Author:
- * Date:
- */
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include <iostream>
+#include <cstring>
 #include <unistd.h>
 #include <arpa/inet.h>
 
@@ -49,7 +30,7 @@ int main() {
     }
 #endif
 
-    char message[] = "ROFF"; // Message to send
+    char message[] = "R1OFF"; // Message to send
     int message_len = strlen(message);
 
     // Send the message to the server
@@ -59,7 +40,7 @@ int main() {
         exit(EXIT_FAILURE);
     }
 
-    printf("Message sent to server: %s\n", message);
+    std::cout << "Message sent to server: " << message << std::endl;
 
     // Close the socket
     close(sockfd);
