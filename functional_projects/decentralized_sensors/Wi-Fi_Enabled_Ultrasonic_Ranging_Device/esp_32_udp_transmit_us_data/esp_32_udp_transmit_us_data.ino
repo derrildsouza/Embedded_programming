@@ -1,7 +1,7 @@
 /*
   File: 
-  Author: [Your Name]
-  Date: [Date]
+  Author: DelD
+  Date: 03-March-2024
 
   Description: This file contains the code for an ESP32-based device that reads
   data from an ultrasonic sensor and broadcasts it over UDP. It also connects
@@ -16,7 +16,7 @@
   Use it at your own risk.
 
   Contact: 
-  For any questions or inquiries, please contact [Your Contact Information].
+  For any questions or inquiries, please contact
 */
 
 #include "WiFi.h"

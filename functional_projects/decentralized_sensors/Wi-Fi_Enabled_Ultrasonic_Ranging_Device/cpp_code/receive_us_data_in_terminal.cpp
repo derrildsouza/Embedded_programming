@@ -9,8 +9,8 @@
  * incoming data and processes it. In this case, the data received is expected
  * to be ultrasonic sensor readings.
  *
- * Author: [Your Name]
- * Date: [Date]
+ * Author: DelD
+ * Date: 03-March-2024
  */
 
 #include <iostream>
