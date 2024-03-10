@@ -79,7 +79,7 @@ Here's how the system works:
 
 # Circuit diagram:
 
-![circuit_diagram_us_udp](https://github.com/derrildsouza/basics/assets/64513486/5c4fa2e4-03d3-4398-aa29-80251eeb316b)
+![circuit_diagram](https://github.com/derrildsouza/Embedded_programming/assets/64513486/d32f9125-9231-4492-9121-7af729a35770)
 
 _Figure 2: Circuit diagram_
 
