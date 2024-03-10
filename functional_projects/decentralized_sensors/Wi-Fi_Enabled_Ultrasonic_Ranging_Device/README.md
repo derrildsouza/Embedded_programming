@@ -22,7 +22,7 @@ Throughout this design document, we will outline the system architecture, hardwa
 
 ## Project-setup:
 
-![Project_setup_block_diagram](https://github.com/derrildsouza/basics/assets/64513486/6c6929ae-c45e-454c-a274-5de931580d69)
+![block_diagram](https://github.com/derrildsouza/Embedded_programming/assets/64513486/70e3d611-fcf3-4fba-a3e9-0cde90cf299b)
 
 _Figure 1: Project Setup_
 
