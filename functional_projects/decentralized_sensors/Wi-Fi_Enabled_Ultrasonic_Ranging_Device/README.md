@@ -2,7 +2,7 @@
 ##
 # Wi-Fi Enabled Ultrasonic Ranging Device
 
-![skill_needed_us](https://github.com/derrildsouza/basics/assets/64513486/cbf525e6-58b1-44cb-b1b1-62d3643c95d2)
+![skill_needed_us](https://github.com/derrildsouza/Embedded_programming/functional_projects/decentralized_sensors/Wi-Fi_Enabled_Ultrasonic_Ranging_Device/skills_needed.png)
 
 # Introduction
 
