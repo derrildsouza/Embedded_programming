@@ -18,6 +18,7 @@
 #include <string.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
+#include <unistd.h>
 
 #define PORT 50000       // Port number for communication
 #define BUFFER_SIZE 1024 // Size of the receive buffer
