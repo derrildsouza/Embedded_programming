@@ -2,7 +2,7 @@
 ##
 # Wi-Fi Enabled Ultrasonic Ranging Device
 
-![skills_needed](https://github.com/derrildsouza/Embedded_programming/assets/64513486/799a72c5-9c5d-4225-a5db-5dbc7571a644)
+
 
 # Introduction
 
